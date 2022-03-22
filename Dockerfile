@@ -35,5 +35,8 @@ RUN useradd --create-home -s /bin/bash -u 501 svnrm \
         && echo svnrm:svnrm | chpasswd \
         && adduser svnrm sudo
 
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+
 USER svnrm
 WORKDIR /home/svnrm
