@@ -48,12 +48,13 @@ jobs:
 
   verify:
     runs-on: ubuntu-latest
-    container: ghcr.io/markphip/svnrm
-    credentials:
-        username: ${{ github.actor }}
-        password: ${{ secrets.github_token }}
-    volumes:
-      - .:/home/svnrm
+    container: 
+      image: ghcr.io/markphip/svnrm
+      credentials:
+          username: ${{ github.actor }}
+          password: ${{ secrets.github_token }}
+      volumes:
+        - .:/home/svnrm
     needs: build
     steps:
       - name: Prepare RM Environment
