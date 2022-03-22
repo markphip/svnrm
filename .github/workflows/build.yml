@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v2
      
       - name: Build Docker Image
-        run: docker build -tag svnrm:latest .
+        run: docker build . -t svnrm:latest
 
   verify:
     runs-on: ubuntu-latest
