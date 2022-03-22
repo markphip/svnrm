@@ -28,29 +28,29 @@ jobs:
     steps:
       - name: Prepare RM Environment
         run: |
-        svn co --depth=immediates https://svn.apache.org/repos/asf/subversion/trunk
-        svn up --set-depth=infinity trunk/tools
-        svn up --set-depth=infinity trunk/build
-        python trunk/tools/dist/release.py build-env 1.14.0
+            svn co --depth=immediates https://svn.apache.org/repos/asf/subversion/trunk
+            svn up --set-depth=infinity trunk/tools
+            svn up --set-depth=infinity trunk/build
+            python trunk/tools/dist/release.py build-env 1.14.0
 
       - name: Create release tarballs
         run:  python trunk/tools/dist/release.py roll 1.14.2 1899108
 
       - name: Prepare build
         run:  |
-        tar xzf deploy/subversion-1.14.2.tar.gz
-        cd subversion-1-14.2
-        ./get-deps.sh
-        ./autogen.sh
-        ./configure --enable-javahl --with-junit=/usr/share/java/junit4.jar \
-          --with-jdk=/usr/lib/jvm/default-java --with-ctypesgen=/usr/local/bin/ctypesgen \
-          --enable-mod-activation --prefix=/opt/build-svn --with-serf=/usr
+            tar xzf deploy/subversion-1.14.2.tar.gz
+            cd subversion-1-14.2
+            ./get-deps.sh
+            ./autogen.sh
+            ./configure --enable-javahl --with-junit=/usr/share/java/junit4.jar \
+              --with-jdk=/usr/lib/jvm/default-java --with-ctypesgen=/usr/local/bin/ctypesgen \
+              --enable-mod-activation --prefix=/opt/build-svn --with-serf=/usr
 
       - name: Build SVN
         run:  |
-        make -j4 && \
-        make javahl && \
-        make swig-py && \
-        make swig-pl && \
-        make swig-rb
+            make -j4 && \
+            make javahl && \
+            make swig-py && \
+            make swig-pl && \
+            make swig-rb
 
