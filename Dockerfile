@@ -5,6 +5,7 @@ RUN apt update && apt install -y \
     apache2-dev \
     build-essential \
     gettext \
+    git \
     iproute2 \
     junit4 \
     liblz4-dev \
