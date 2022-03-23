@@ -5,7 +5,6 @@ RUN apt update && apt install -y \
     apache2-dev \
     build-essential \
     gettext \
-    git \
     iproute2 \
     junit4 \
     liblz4-dev \
@@ -32,5 +31,15 @@ RUN apt update && apt install -y \
     zlib1g-dev \
  && pip install ctypesgen && apt clean && chmod a+rw /opt
 
-COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+COPY /scripts /opt/scripts
+RUN chmod a+rx /opt/scripts/*.sh
+
+RUN useradd --create-home -s /bin/bash -u 501 svnrm \
+        && echo svnrm:svnrm | chpasswd \
+        && adduser svnrm sudo
+RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+
+USER svnrm
+WORKDIR /home/svnrm
+
+CMD [ "/opt/scripts/init.sh" ]

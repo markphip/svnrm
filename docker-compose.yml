@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+
+  svnrm:
+    container_name: svnrm
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ./mount
+        target: /home/svnrm
