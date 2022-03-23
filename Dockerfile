@@ -32,12 +32,5 @@ RUN apt update && apt install -y \
     zlib1g-dev \
  && pip install ctypesgen && apt clean && chmod a+rw /opt
 
-RUN useradd --create-home -s /bin/bash -u 501 svnrm \
-        && echo svnrm:svnrm | chpasswd \
-        && adduser svnrm sudo
-
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-
-USER svnrm
-WORKDIR /home/svnrm
