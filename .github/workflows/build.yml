@@ -36,11 +36,11 @@ jobs:
             python trunk/tools/dist/release.py build-env 1.14.0
 
       - name: Create release tarballs
-        run:  python trunk/tools/dist/release.py roll 1.14.2 1899108 2> /dev/null || true
+        run:  python trunk/tools/dist/release.py roll 1.14.2 1899108 || true
 
       - name: Prepare build
         run:  |
-            tar xzf deploy/subversion-1.14.2.tar.gz
+            tar xvzf deploy/subversion-1.14.2.tar.gz
             cd subversion-1-14.2
             ./get-deps.sh
             ./autogen.sh
