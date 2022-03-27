@@ -11,7 +11,7 @@ cd subversion-1.10.8
 ./autogen.sh
 ./configure --enable-javahl --with-junit=/usr/share/java/junit4.jar \
     --with-jdk=/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64 --with-ctypesgen=/usr/local/bin/ctypesgen \
-    --enable-mod-activation --prefix=/opt/build-svn-1.10 --with-serf=/usr
+    --enable-mod-activation --prefix=/opt/build-svn-1.10 --with-serf=/usr --enable-shared
 
 make -j8
 make -j8 javahl
