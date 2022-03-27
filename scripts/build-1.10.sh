@@ -30,3 +30,8 @@ make check-swig-rb
 make check-swig-pl
 make svnserveautocheck PARALLEL=8
 make davautocheck APACHE_MPM=event PARALLEL=8
+
+# Test the installed build
+/opt/build-svn-1.10/bin/svn --version --verbose
+/opt/build-svn-1.10/bin/svn co https://svn.apache.org/repos/asf/subversion/trunk --depth=immediates /tmp/trunk-1.10
+

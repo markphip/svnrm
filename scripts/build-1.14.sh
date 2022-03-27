@@ -11,7 +11,7 @@ cd subversion-1.14.2
 ./autogen.sh
 ./configure --enable-javahl --with-junit=/usr/share/java/junit4.jar \
     --with-jdk=/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64 --with-ctypesgen=/usr/local/bin/ctypesgen \
-    --enable-mod-activation --prefix=/opt/build-svn-1.14 --with-serf=/usr
+    --enable-mod-activation --prefix=/opt/build-svn-1.14 --with-serf=/usr --enable-shared --with-apxs
 
 make -j8
 make -j8 javahl
@@ -30,3 +30,8 @@ make check-swig-rb
 make check-swig-pl
 make svnserveautocheck PARALLEL=8
 make davautocheck APACHE_MPM=event PARALLEL=8
+
+# Test the installed build
+/opt/build-svn-1.14/bin/svn --version --verbose
+/opt/build-svn-1.14/bin/svn co https://svn.apache.org/repos/asf/subversion/trunk --depth=immediates /tmp/trunk-1.14
+
