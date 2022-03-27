@@ -5,7 +5,7 @@ cd ~
 #
 # Build and Install Release
 #
-tar subversion-1.14.2.tar.gz
+tar xvzf subversion-1.14.2.tar.gz
 cd subversion-1.14.2
 ./get-deps.sh
 ./autogen.sh
