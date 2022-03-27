@@ -1,28 +1,23 @@
 #!/bin/bash -x
 
-#
-# Initialize RM Environment
-#
 cd ~
-trunk/tools/dist/release.py build-env 1.10.0
-trunk/tools/dist/release.py roll 1.10.8 1899108 || true
 
 #
 # Build and Install Release
 #
-tar xvzf deploy/subversion-1.10.8.tar.gz
+tar subversion-1.10.8.tar.gz
 cd subversion-1.10.8
 ./get-deps.sh
 ./autogen.sh
 ./configure --enable-javahl --with-junit=/usr/share/java/junit4.jar \
     --with-jdk=/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64 --with-ctypesgen=/usr/local/bin/ctypesgen \
-    --enable-mod-activation --prefix=/opt/build-svn --with-serf=/usr
+    --enable-mod-activation --prefix=/opt/build-svn-1.10 --with-serf=/usr
 
 make -j8
-make javahl
-make swig-py
-make swig-pl
-make swig-rb
+make -j8 javahl
+make -j8 swig-py
+make -j8 swig-pl
+make -j8 swig-rb
 sudo make install
 
 #
