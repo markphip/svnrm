@@ -42,4 +42,4 @@ RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 USER svnrm
 WORKDIR /home/svnrm
 
-CMD [ "/opt/scripts/init.sh" ]
+RUN /opt/scripts/init.sh
