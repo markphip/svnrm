@@ -1,14 +1,9 @@
 #!/bin/bash -x
 
-cd ~
-
 #
 # Build and Install Release
 #
-tar xvzf subversion-1.10.8.tar.gz
-cd subversion-1.10.8
 ./get-deps.sh
-./autogen.sh
 ./configure --enable-javahl --with-junit=/usr/share/java/junit4.jar \
     --with-jdk=/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64 --with-ctypesgen=/usr/local/bin/ctypesgen \
     --enable-mod-activation --prefix=/opt/build-svn-1.10 --with-serf=/usr --enable-shared

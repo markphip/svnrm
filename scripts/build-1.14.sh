@@ -1,12 +1,8 @@
 #!/bin/bash -x
 
-cd ~
-
 #
 # Build and Install Release
 #
-tar xvzf subversion-1.14.2.tar.gz
-cd subversion-1.14.2
 ./get-deps.sh
 ./autogen.sh
 ./configure --enable-javahl --with-junit=/usr/share/java/junit4.jar \
