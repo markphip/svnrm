@@ -19,6 +19,11 @@ too. That does work, but I decided to only do the RM process in Docker and then 
 the release tarballs to an Azure VM to run the tests. This allows me to run the process
 faster and without tying up my local machine. The other issue is that Docker with a
 mounted file system on MacOS and Windows can be a bit slow and even flaky.
+
+The point is only that we could slim down the installed packages if we never wanted to
+run a build in this container. For now, since that works, I have decided to leave it in
+place.
+
 ## Docker Compose
 
 I am using Docker Compose (`docker-compose.yml`) for personal preference. I am mounting a
