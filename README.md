@@ -44,11 +44,24 @@ ensure the latest version of the RM tools are included inside the Docker image.
 ## Run the RM Process
 
 To run the RM tools just run the command `docker-compose run svnrm bash`. This will run the container
-and open to a bash prompt. You can then run the SVN `release.py` script within the container. As an
-example:
+and open to a bash prompt. You can then run the SVN `release.py` script within the container.
+
+Before running the script, we need to do the following "hack" to work around a problem downloading
+the KEYS file from Apache (which no longer exists).
 
 ```bash
-/opt/trunk/tools/dist/release.py --base-dir /opt/svnrm/1.10 --target ~/deploy-1.10  roll 1.10.8 1899349 
+vim /opt/trunk/tools/dist/release.py
+
+find and replace:
+KEYS = 'https://people.apache.org/keys/group/subversion.asc'
+with
+KEYS = 'file:///tmp/KEYS'
+```
+
+As an example:
+
+```bash
+/opt/trunk/tools/dist/release.py --base-dir /opt/svnrm/1.10 --target ~/deploy-1.10  roll 1.10.8 1899482 
 ```
 
 The `--base-dir` and `--target` options are important. The former points the script at the RM environment

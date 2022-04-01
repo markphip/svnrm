@@ -4,6 +4,7 @@ RUN apt update && apt install -y \
     apache2 \
     apache2-dev \
     build-essential \
+    curl \
     gettext \
     iproute2 \
     junit4 \
@@ -26,6 +27,7 @@ RUN apt update && apt install -y \
     subversion \
     sudo \
     unzip \
+    vim \
     wget \
     zip \
     zlib1g-dev \
