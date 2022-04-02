@@ -13,6 +13,7 @@ INFO:root:Moving artifacts and calculating checksums
 ```
 
 ## Copy files to AzureVM from MacOS
+
 ```bash
 scp -i ~/.ssh/xxx.pem mount/deploy-1.10/subversion-1.10.8.tar.gz xxx@xxx.xxx.xxx.xxx:~
 scp -i ~/.ssh/xxx.pem mount/deploy-1.10/subversion-1.10.8.tar.gz.sha512 xxx@xxx.xxx.xxx.xxx:~
@@ -39,18 +40,17 @@ Get the logs and verify no test or build failures
 ```bash
 scp -i ~/.ssh/xxx.pem xxx@xxx.xxx.xxx.xxx:~/build-1.14.out history/1.14.2
 scp -i ~/.ssh/xxx.pem xxx@xxx.xxx.xxx.xxx:~/time_n_err-1.14.out history/1.14.2
-
-scp -i ~/.ssh/svnrm.pem markphip@20.228.247.135:~/build-1.14.out history/1.14.2
-scp -i ~/.ssh/svnrm.pem markphip@20.228.247.135:~/time_n_err-1.14.out history/1.14.2
-
 ```
+
 ### Sign the Release
+
 ```bash
 $ gpg -ba mount/deploy-1.14/subversion-1.14.2.tar.bz2
 $ gpg -ba mount/deploy-1.14/subversion-1.14.2.tar.gz
 $ gpg -ba mount/deploy-1.14/subversion-1.14.2.zip
 ```
 ## Run in Docker Image
+
 ```bash
 $ /opt/trunk/tools/dist/release.py --base-dir /opt/svnrm/1.14 --target ~/deploy-1.14 --username markphip create-tag 1.14.2 1899510
 INFO:root:Creating tag for 1.14.2
