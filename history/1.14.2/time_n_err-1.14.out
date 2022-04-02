@@ -1,0 +1,766 @@
++ ./get-deps.sh
++ ./autogen.sh
++ ./configure --enable-javahl --with-junit=/usr/share/java/junit4.jar --with-jdk=/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64 --with-ctypesgen=/usr/local/bin/ctypesgen --enable-mod-activation --prefix=/opt/build-svn-1.14 --with-serf=/usr --enable-shared
++ make -j8
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
++ make -j8 javahl
+In file included from subversion/bindings/javahl/native/SVNClient.cpp:33:
+subversion/bindings/javahl/native/SVNClient.cpp: In member function ‘void SVNClient::revert(StringArray&, svn_depth_t, StringArray&, bool, bool)’:
+subversion/bindings/javahl/native/SVNClient.cpp:371:58: warning: ‘svn_error_t* svn_client_revert3(const apr_array_header_t*, svn_depth_t, const apr_array_header_t*, svn_boolean_t, svn_boolean_t, svn_client_ctx_t*, apr_pool_t*)’ is deprecated [-Wdeprecated-declarations]
+                                    ctx, subPool.getPool()), );
+                                                          ^
+subversion/bindings/javahl/native/JNIUtil.h:260:39: note: in definition of macro ‘SVN_JNI_ERR’
+     svn_error_t *svn_jni_err__temp = (expr);            \
+                                       ^~~~
+In file included from subversion/bindings/javahl/native/OperationContext.h:34,
+                 from subversion/bindings/javahl/native/ClientContext.h:32,
+                 from subversion/bindings/javahl/native/SVNClient.h:34,
+                 from subversion/bindings/javahl/native/SVNClient.cpp:32:
+./subversion/include/svn_client.h:4517:1: note: declared here
+ svn_client_revert3(const apr_array_header_t *paths,
+ ^~~~~~~~~~~~~~~~~~
+In file included from subversion/bindings/javahl/native/SVNClient.cpp:33:
+subversion/bindings/javahl/native/SVNClient.cpp:371:58: warning: ‘svn_error_t* svn_client_revert3(const apr_array_header_t*, svn_depth_t, const apr_array_header_t*, svn_boolean_t, svn_boolean_t, svn_client_ctx_t*, apr_pool_t*)’ is deprecated [-Wdeprecated-declarations]
+                                    ctx, subPool.getPool()), );
+                                                          ^
+subversion/bindings/javahl/native/JNIUtil.h:260:39: note: in definition of macro ‘SVN_JNI_ERR’
+     svn_error_t *svn_jni_err__temp = (expr);            \
+                                       ^~~~
+In file included from subversion/bindings/javahl/native/OperationContext.h:34,
+                 from subversion/bindings/javahl/native/ClientContext.h:32,
+                 from subversion/bindings/javahl/native/SVNClient.h:34,
+                 from subversion/bindings/javahl/native/SVNClient.cpp:32:
+./subversion/include/svn_client.h:4517:1: note: declared here
+ svn_client_revert3(const apr_array_header_t *paths,
+ ^~~~~~~~~~~~~~~~~~
+In file included from subversion/bindings/javahl/native/SVNClient.cpp:33:
+subversion/bindings/javahl/native/SVNClient.cpp: In member function ‘void SVNClient::diff(const char*, Revision&, const char*, Revision&, Revision*, const char*, OutputStream&, svn_depth_t, StringArray&, bool, bool, bool, bool, bool, bool, const DiffOptions&)’:
+subversion/bindings/javahl/native/SVNClient.cpp:1062:53: warning: ‘svn_error_t* svn_client_diff_peg6(const apr_array_header_t*, const char*, const svn_opt_revision_t*, const svn_opt_revision_t*, const svn_opt_revision_t*, const char*, svn_depth_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, const char*, svn_stream_t*, svn_stream_t*, const apr_array_header_t*, svn_client_ctx_t*, apr_pool_t*)’ is deprecated [-Wdeprecated-declarations]
+                                    subPool.getPool()),
+                                                     ^
+subversion/bindings/javahl/native/JNIUtil.h:260:39: note: in definition of macro ‘SVN_JNI_ERR’
+     svn_error_t *svn_jni_err__temp = (expr);            \
+                                       ^~~~
+In file included from subversion/bindings/javahl/native/OperationContext.h:34,
+                 from subversion/bindings/javahl/native/ClientContext.h:32,
+                 from subversion/bindings/javahl/native/SVNClient.h:34,
+                 from subversion/bindings/javahl/native/SVNClient.cpp:32:
+./subversion/include/svn_client.h:3428:1: note: declared here
+ svn_client_diff_peg6(const apr_array_header_t *diff_options,
+ ^~~~~~~~~~~~~~~~~~~~
+In file included from subversion/bindings/javahl/native/SVNClient.cpp:33:
+subversion/bindings/javahl/native/SVNClient.cpp:1062:53: warning: ‘svn_error_t* svn_client_diff_peg6(const apr_array_header_t*, const char*, const svn_opt_revision_t*, const svn_opt_revision_t*, const svn_opt_revision_t*, const char*, svn_depth_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, const char*, svn_stream_t*, svn_stream_t*, const apr_array_header_t*, svn_client_ctx_t*, apr_pool_t*)’ is deprecated [-Wdeprecated-declarations]
+                                    subPool.getPool()),
+                                                     ^
+subversion/bindings/javahl/native/JNIUtil.h:260:39: note: in definition of macro ‘SVN_JNI_ERR’
+     svn_error_t *svn_jni_err__temp = (expr);            \
+                                       ^~~~
+In file included from subversion/bindings/javahl/native/OperationContext.h:34,
+                 from subversion/bindings/javahl/native/ClientContext.h:32,
+                 from subversion/bindings/javahl/native/SVNClient.h:34,
+                 from subversion/bindings/javahl/native/SVNClient.cpp:32:
+./subversion/include/svn_client.h:3428:1: note: declared here
+ svn_client_diff_peg6(const apr_array_header_t *diff_options,
+ ^~~~~~~~~~~~~~~~~~~~
+In file included from subversion/bindings/javahl/native/SVNClient.cpp:33:
+subversion/bindings/javahl/native/SVNClient.cpp:1092:49: warning: ‘svn_error_t* svn_client_diff6(const apr_array_header_t*, const char*, const svn_opt_revision_t*, const char*, const svn_opt_revision_t*, const char*, svn_depth_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, const char*, svn_stream_t*, svn_stream_t*, const apr_array_header_t*, svn_client_ctx_t*, apr_pool_t*)’ is deprecated [-Wdeprecated-declarations]
+                                subPool.getPool()),
+                                                 ^
+subversion/bindings/javahl/native/JNIUtil.h:260:39: note: in definition of macro ‘SVN_JNI_ERR’
+     svn_error_t *svn_jni_err__temp = (expr);            \
+                                       ^~~~
+In file included from subversion/bindings/javahl/native/OperationContext.h:34,
+                 from subversion/bindings/javahl/native/ClientContext.h:32,
+                 from subversion/bindings/javahl/native/SVNClient.h:34,
+                 from subversion/bindings/javahl/native/SVNClient.cpp:32:
+./subversion/include/svn_client.h:3233:1: note: declared here
+ svn_client_diff6(const apr_array_header_t *diff_options,
+ ^~~~~~~~~~~~~~~~
+In file included from subversion/bindings/javahl/native/SVNClient.cpp:33:
+subversion/bindings/javahl/native/SVNClient.cpp:1092:49: warning: ‘svn_error_t* svn_client_diff6(const apr_array_header_t*, const char*, const svn_opt_revision_t*, const char*, const svn_opt_revision_t*, const char*, svn_depth_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, svn_boolean_t, const char*, svn_stream_t*, svn_stream_t*, const apr_array_header_t*, svn_client_ctx_t*, apr_pool_t*)’ is deprecated [-Wdeprecated-declarations]
+                                subPool.getPool()),
+                                                 ^
+subversion/bindings/javahl/native/JNIUtil.h:260:39: note: in definition of macro ‘SVN_JNI_ERR’
+     svn_error_t *svn_jni_err__temp = (expr);            \
+                                       ^~~~
+In file included from subversion/bindings/javahl/native/OperationContext.h:34,
+                 from subversion/bindings/javahl/native/ClientContext.h:32,
+                 from subversion/bindings/javahl/native/SVNClient.h:34,
+                 from subversion/bindings/javahl/native/SVNClient.cpp:32:
+./subversion/include/svn_client.h:3233:1: note: declared here
+ svn_client_diff6(const apr_array_header_t *diff_options,
+ ^~~~~~~~~~~~~~~~
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+ar: `u' modifier ignored since `D' is the default (see `U')
++ make -j8 swig-py
+/home/markphip/subversion-1.14.2/subversion/include/svn_version.h:148: Warning 302: Identifier 'svn_version_t' redefined (ignored),
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_types_h.swg:47: Warning 302: previous definition of 'svn_version_t'.
+/home/markphip/subversion-1.14.2/subversion/include/svn_version.h:148: Warning 302: Identifier 'svn_version_t' redefined (ignored),
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_types_h.swg:47: Warning 302: previous definition of 'svn_version_t'.
+/home/markphip/subversion-1.14.2/subversion/include/svn_version.h:148: Warning 302: Identifier 'svn_version_t' redefined (ignored),
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_types_h.swg:47: Warning 302: previous definition of 'svn_version_t'.
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_version.h:148: Warning 302: Identifier 'svn_version_t' redefined (ignored),
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_types_h.swg:47: Warning 302: previous definition of 'svn_version_t'.
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_version.h:148: Warning 302: Identifier 'svn_version_t' redefined (ignored),
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_types_h.swg:47: Warning 302: previous definition of 'svn_version_t'.
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_version.h:148: Warning 302: Identifier 'svn_version_t' redefined (ignored),
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_types_h.swg:47: Warning 302: previous definition of 'svn_version_t'.
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_version.h:148: Warning 302: Identifier 'svn_version_t' redefined (ignored),
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_types_h.swg:47: Warning 302: previous definition of 'svn_version_t'.
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_ra.h:924: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_ra.h:924: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_ra.h:924: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_delta.h:1437: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:1710: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:1733: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2336: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2719: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2731: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2886: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2886: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2886: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_version.h:148: Warning 302: Identifier 'svn_version_t' redefined (ignored),
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_types_h.swg:47: Warning 302: previous definition of 'svn_version_t'.
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:3485: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:3548: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:2760: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:2760: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:2760: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:3052: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_ra_h.swg:351: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:201: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:4082: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:4103: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:4096: Warning 900: FIXME: Missing argout typemap
+ar: `u' modifier ignored since `D' is the default (see `U')
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_wc_h.swg:290: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_wc_h.swg:295: Warning 900: FIXME: Missing argout typemap
++ make -j8 swig-pl
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:314: Warning 453: Can't apply (svn_rangelist_t **RANGELIST_INOUT). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:681: Warning 454: Setting a pointer/reference variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296./subversion/bindings/swig/core.i:: 296W:a rWnairnngi n453g:  453Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i./subversion/bindings/swig/core.i::307296::  WWaarrnniinngg  453453::  Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:./subversion/bindings/swig/core.i307::296 :W aWranrinnign g453 :453 :Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+ Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307:./subversion/bindings/swig/core.i :W296a:r nWianrgn i453n:g  Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307:./subversion/bindings/swig/core.i :W296a:r nWianrgn i453n:g  Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: ./subversion/bindings/swig/core.iW:a296r:n iWnagr n453i:n gCan't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+ 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:314:./subversion/bindings/swig/core.i :W296a:r nWianrgn i453n:g  Can't apply (svn_rangelist_t **RANGELIST_INOUT). No typemaps are defined.
+453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:329./subversion/bindings/swig/core.i:: 296W:a rWnairnngi n453g:  453Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:./subversion/bindings/swig/core.i329::296 :W aWranrinnign g453 :453 :Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+ Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: ./subversion/bindings/swig/core.iW:a307r:n iWnagr n453i:n gCan't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+ 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i./subversion/bindings/swig/core.i::329307::  WWaarrnniinngg  453453::  Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:./subversion/bindings/swig/core.i329::307 :W aWranrinnign g453 :453 :Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+ Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:329./subversion/bindings/swig/core.i:: 307W:a rWnairnngi n453g:  453Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:329:./subversion/bindings/swig/core.i :W307a:r nWianrgn i453n:g  Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Wa./subversion/bindings/swig/core.ir:n314i:n gW a453r:n iCan't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+ng 453:./subversion/bindings/swig/core.i :Can't apply (svn_rangelist_t **RANGELIST_INOUT). No typemaps are defined.
+329: Warni./subversion/bindings/swig/core.in:g329 :453 :W aCan't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+rning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:314: Warning 453: Can't apply (svn_rangelist_t **RANGELIST_INOUT). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:294: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:295: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:296: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:322: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_ra.h:924: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:314: Warning 453: Can't apply (svn_rangelist_t **RANGELIST_INOUT). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/svn_fs.i:94: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/include/svn_delta.h:1437: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_delta.h:1565: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:314: Warning 453: Can't apply (svn_rangelist_t **RANGELIST_INOUT). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/svn_fs.i:94: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:1556: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_ra.h:2160: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_auth.h:192: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_auth.h:194: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_auth.h:216: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:1614: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_auth.h:277: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:1710: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:1733: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2336: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:314: Warning 453: Can't apply (svn_rangelist_t **RANGELIST_INOUT). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/svn_wc.i:69: Warning 453: Can't apply (apr_array_header_t **OUTPUT_OF_PROP). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:201: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2719: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2731: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2886: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_ra_h.swg:351: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_ra_h.swg:351: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:3485: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/include/svn_containers.swg:121: Warning 453: Can't apply (apr_hash_t **HASH_CSTRING). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:296: Warning 453: Can't apply (svn_rangelist_t *RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:307: Warning 453: Can't apply (svn_rangelist_t **RANGELIST). No typemaps are defined.
+./subversion/bindings/swig/core.i:314: Warning 453: Can't apply (svn_rangelist_t **RANGELIST_INOUT). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+./subversion/bindings/swig/core.i:329: Warning 453: Can't apply (apr_hash_t *MERGEINFO). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:3548: Warning 900: FIXME: Missing argout typemap
+./subversion/bindings/swig/svn_wc.i:69: Warning 453: Can't apply (apr_array_header_t **OUTPUT_OF_PROP). No typemaps are defined.
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:487: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:2760: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:558: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:591: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:2913: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:2987: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_mergeinfo.h:307: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_mergeinfo.h:307: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:3052: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_mergeinfo.h:373: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_mergeinfo.h:430: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_mergeinfo.h:479: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_mergeinfo.h:494: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:2918: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:2921: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:2957: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:3007: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:4082: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:3249: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:4103: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:4096: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:4984: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:4997: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:5014: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:6868: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:6260: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:6882: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:7236: Warning 451: Setting a const char * variable may leak memory.
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_wc_h.swg:290: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_wc_h.swg:295: Warning 900: FIXME: Missing argout typemap
+ar: `u' modifier ignored since `D' is the default (see `U')
++ make -j8 swig-rb
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘svn_swig_rb_initialize’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:566:3: warning: ‘svn_utf_initialize’ is deprecated [-Wdeprecated-declarations]
+   svn_utf_initialize(swig_rb_pool);
+   ^~~~~~~~~~~~~~~~~~
+In file included from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:68:
+/home/markphip/subversion-1.14.2/subversion/include/svn_utf.h:77:1: note: declared here
+ svn_utf_initialize(apr_pool_t *pool);
+ ^~~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘c2r_info_dup’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1195:1: warning: ‘svn_info_dup’ is deprecated [-Wdeprecated-declarations]
+ DEFINE_DUP(info)
+ ^~~~~~~~~~
+In file included from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.h:51,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:29:
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:7324:1: note: declared here
+ svn_info_dup(const svn_info_t *info,
+ ^~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘c2r_wc_entry_dup’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1199:1: warning: ‘svn_wc_entry_dup’ is deprecated [-Wdeprecated-declarations]
+ DEFINE_DUP(wc_entry)
+ ^~~~~~~~~~
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+In file included from /home/markphip/subversion-1.14.2/subversion/include/svn_client.h:44,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.h:51,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:29:
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:3227:1: note: declared here
+ svn_wc_entry_dup(const svn_wc_entry_t *entry,
+ ^~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘c2r_client_proplist_item_dup’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1204:1: warning: ‘svn_client_proplist_item_dup’ is deprecated [-Wdeprecated-declarations]
+ DEFINE_DUP_NO_CONVENIENCE(client_proplist_item)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.h:51,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:29:
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:409:1: note: declared here
+ svn_client_proplist_item_dup(const svn_client_proplist_item_t *item,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘c2r_log_changed_path_dup’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1206:1: warning: ‘svn_log_changed_path_dup’ is deprecated [-Wdeprecated-declarations]
+ DEFINE_DUP_NO_CONVENIENCE(log_changed_path)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.h:48,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:29:
+/home/markphip/subversion-1.14.2/subversion/include/svn_types.h:822:1: note: declared here
+ svn_log_changed_path_dup(const svn_log_changed_path_t *changed_path,
+ ^~~~~~~~~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘c2r_wc_status2_dup’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1207:1: warning: ‘svn_wc_dup_status2’ is deprecated [-Wdeprecated-declarations]
+ DEFINE_DUP_NO_CONST_WITH_FUNCTION_NAME(wc_status2, wc_dup_status2)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/markphip/subversion-1.14.2/subversion/include/svn_client.h:44,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.h:51,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:29:
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:4056:1: note: declared here
+ svn_wc_dup_status2(const svn_wc_status2_t *orig_stat,
+ ^~~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘svn_swig_rb_hash_to_apr_hash_swig_type’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1240:23: warning: passing argument 2 of ‘r2c_hash’ from incompatible pointer type [-Wincompatible-pointer-types]
+ #define r2c_swig_type svn_swig_rb_to_swig_type
+                       ^~~~~~~~~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1573:25: note: in expansion of macro ‘r2c_swig_type’
+   return r2c_hash(hash, r2c_swig_type, (void *)typename, pool);
+                         ^~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1537:31: note: expected ‘r2c_func’ {aka ‘void * (*)(long unsigned int,  void *, struct apr_pool_t *)’} but argument is of type ‘void * (*)(VALUE,  const void *, apr_pool_t *)’ {aka ‘void * (*)(long unsigned int,  const void *, struct apr_pool_t *)’}
+ r2c_hash(VALUE hash, r2c_func func, void *ctx, apr_pool_t *pool)
+                      ~~~~~~~~~^~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘invoke_callback’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1654:20: warning: passing argument 1 of ‘rb_ensure’ from incompatible pointer type [-Wincompatible-pointer-types]
+   return rb_ensure(callback, baton, callback_ensure, subpool);
+                    ^~~~~~~~
+In file included from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from /home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/swig_ruby_external_runtime.swg:722,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:28:
+/usr/include/ruby-2.5.0/ruby/ruby.h:1883:17: note: expected ‘VALUE (*)()’ {aka ‘long unsigned int (*)()’} but argument is of type ‘VALUE (*)(VALUE,  ...)’ {aka ‘long unsigned int (*)(long unsigned int,  ...)’}
+ VALUE rb_ensure(VALUE(*)(ANYARGS),VALUE,VALUE(*)(ANYARGS),VALUE);
+                 ^~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1654:37: warning: passing argument 3 of ‘rb_ensure’ from incompatible pointer type [-Wincompatible-pointer-types]
+   return rb_ensure(callback, baton, callback_ensure, subpool);
+                                     ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from /home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/swig_ruby_external_runtime.swg:722,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:28:
+/usr/include/ruby-2.5.0/ruby/ruby.h:1883:41: note: expected ‘VALUE (*)()’ {aka ‘long unsigned int (*)()’} but argument is of type ‘VALUE (*)(VALUE,  ...)’ {aka ‘long unsigned int (*)(long unsigned int,  ...)’}
+ VALUE rb_ensure(VALUE(*)(ANYARGS),VALUE,VALUE(*)(ANYARGS),VALUE);
+                                         ^~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘callback_handle_error’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1663:21: warning: passing argument 1 of ‘rb_rescue2’ from incompatible pointer type [-Wincompatible-pointer-types]
+   return rb_rescue2(callback,
+                     ^~~~~~~~
+In file included from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from /home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/swig_ruby_external_runtime.swg:722,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:28:
+/usr/include/ruby-2.5.0/ruby/ruby.h:1882:18: note: expected ‘VALUE (*)()’ {aka ‘long unsigned int (*)()’} but argument is of type ‘VALUE (*)(VALUE,  ...)’ {aka ‘long unsigned int (*)(long unsigned int,  ...)’}
+ VALUE rb_rescue2(VALUE(*)(ANYARGS),VALUE,VALUE(*)(ANYARGS),VALUE,...);
+                  ^~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1665:21: warning: passing argument 3 of ‘rb_rescue2’ from incompatible pointer type [-Wincompatible-pointer-types]
+                     callback_rescue,
+                     ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from /home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/swig_ruby_external_runtime.swg:722,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:28:
+/usr/include/ruby-2.5.0/ruby/ruby.h:1882:42: note: expected ‘VALUE (*)()’ {aka ‘long unsigned int (*)()’} but argument is of type ‘VALUE (*)(VALUE,  ...)’ {aka ‘long unsigned int (*)(long unsigned int,  ...)’}
+ VALUE rb_rescue2(VALUE(*)(ANYARGS),VALUE,VALUE(*)(ANYARGS),VALUE,...);
+                                          ^~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘invoke_callback_handle_error’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1684:20: warning: passing argument 1 of ‘rb_ensure’ from incompatible pointer type [-Wincompatible-pointer-types]
+   return rb_ensure(callback_handle_error, (VALUE)&handle_error_baton,
+                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from /home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/swig_ruby_external_runtime.swg:722,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:28:
+/usr/include/ruby-2.5.0/ruby/ruby.h:1883:17: note: expected ‘VALUE (*)()’ {aka ‘long unsigned int (*)()’} but argument is of type ‘VALUE (*)(VALUE,  ...)’ {aka ‘long unsigned int (*)(long unsigned int,  ...)’}
+ VALUE rb_ensure(VALUE(*)(ANYARGS),VALUE,VALUE(*)(ANYARGS),VALUE);
+                 ^~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1685:20: warning: passing argument 3 of ‘rb_ensure’ from incompatible pointer type [-Wincompatible-pointer-types]
+                    callback_ensure, pool);
+                    ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from /home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/swig_ruby_external_runtime.swg:722,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:28:
+/usr/include/ruby-2.5.0/ruby/ruby.h:1883:41: note: expected ‘VALUE (*)()’ {aka ‘long unsigned int (*)()’} but argument is of type ‘VALUE (*)(VALUE,  ...)’ {aka ‘long unsigned int (*)(long unsigned int,  ...)’}
+ VALUE rb_ensure(VALUE(*)(ANYARGS),VALUE,VALUE(*)(ANYARGS),VALUE);
+                                         ^~~~~~~~~~~~~~~~~
+/home/markphip/subversion-1.14.2/subversion/include/svn_ra.h:924: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:1710: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:1733: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_delta.h:1437: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:531: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_props.h:679: Warning 305: Bad constant value (ignored).
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2336: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_ra.h:2160: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2719: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2731: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:2886: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:3485: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:2760: Warning 901: FIXME: Missing old_value_p typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_fs.h:3548: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:2913: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:3052: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_ra_h.swg:351: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_ra_h.swg:351: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:4082: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_repos.h:4103: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:4984: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:4997: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:5014: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_wc.h:4096: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/include/svn_client.h:6260: Warning 900: FIXME: Missing argout typemap
+In file included from subversion/bindings/swig/ruby/core.c:2031:
+/home/markphip/subversion-1.14.2/subversion/svn_private_config.h:282: warning: "_" redefined
+ #define _(x) dgettext(PACKAGE_NAME, x)
+ 
+In file included from /usr/include/ruby-2.5.0/ruby/ruby.h:29,
+                 from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from subversion/bindings/swig/ruby/core.c:855:
+/usr/include/ruby-2.5.0/ruby/defines.h:169: note: this is the location of the previous definition
+ # define _(args) args
+ 
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_wc_h.swg:290: Warning 900: FIXME: Missing argout typemap
+/home/markphip/subversion-1.14.2/subversion/bindings/swig/proxy/svn_wc_h.swg:295: Warning 900: FIXME: Missing argout typemap
+ar: `u' modifier ignored since `D' is the default (see `U')
++ sudo make install
+libtool: warning: relinking 'libsvn_delta-1.la'
+libtool: warning: relinking 'libsvn_fs_util-1.la'
+libtool: warning: relinking 'libsvn_fs_fs-1.la'
+libtool: warning: relinking 'libsvn_fs_x-1.la'
+libtool: warning: relinking 'libsvn_fs-1.la'
+libtool: warning: relinking 'libsvn_ra_svn-1.la'
+libtool: warning: relinking 'libsvn_repos-1.la'
+libtool: warning: relinking 'libsvn_ra_local-1.la'
+libtool: warning: relinking 'libsvn_ra_serf-1.la'
+libtool: warning: relinking 'libsvn_diff-1.la'
+libtool: warning: relinking 'libsvn_ra-1.la'
+libtool: warning: relinking 'libsvn_wc-1.la'
+libtool: warning: relinking 'libsvn_client-1.la'
+/usr/share/apache2/build/instdso.sh SH_LIBTOOL='/usr/share/apr-1.0/build/libtool' mod_dav_svn.la /opt/build-svn-1.14/libexec
+libtool: warning: relinking 'mod_dav_svn.la'
+chmod 644 /opt/build-svn-1.14/libexec/mod_dav_svn.so
+[preparing module `dav_svn' in /etc/apache2/mods-available/dav_svn.load]
+/usr/share/apache2/build/instdso.sh SH_LIBTOOL='/usr/share/apr-1.0/build/libtool' mod_authz_svn.la /opt/build-svn-1.14/libexec
+libtool: warning: relinking 'mod_authz_svn.la'
+chmod 644 /opt/build-svn-1.14/libexec/mod_authz_svn.so
+[preparing module `authz_svn' in /etc/apache2/mods-available/authz_svn.load]
++ make check PARALLEL=8
++ make check-javahl
+ar: `u' modifier ignored since `D' is the default (see `U')
++ make check-swig-py
+..............s............................s..............s................................................................................................
+----------------------------------------------------------------------
+Ran 155 tests in 164.084s
+
+OK (skipped=3)
++ make check-swig-rb
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
++ make check-swig-pl
+# committed 1,2022-04-02T12:15:10.595505Z,root
+# committed 2,2022-04-02T12:15:10.682032Z,root
+# committed 3,2022-04-02T12:15:10.802425Z,root
+# cleanup
+# cleanup
+# cleanup
+# cleanup
+Warning: unable to close filehandle $aresult properly: Bad file descriptor at /home/markphip/subversion-1.14.2/subversion/bindings/swig/perl/native/blib/lib/SVN/Core.pm line 58.
+Warning: unable to close filehandle $aresult properly: Bad file descriptor at /home/markphip/subversion-1.14.2/subversion/bindings/swig/perl/native/blib/lib/SVN/Core.pm line 58.
+Warning: unable to close filehandle $out_fh properly: Bad file descriptor at /home/markphip/subversion-1.14.2/subversion/bindings/swig/perl/native/blib/lib/SVN/Core.pm line 58.
+Warning: unable to close filehandle $out_fh properly: Bad file descriptor at /home/markphip/subversion-1.14.2/subversion/bindings/swig/perl/native/blib/lib/SVN/Core.pm line 58.
+Warning: unable to close filehandle $out_fh properly: Bad file descriptor at /home/markphip/subversion-1.14.2/subversion/bindings/swig/perl/native/blib/lib/SVN/Core.pm line 58.
+Warning: unable to close filehandle $out_fh properly: Bad file descriptor at /home/markphip/subversion-1.14.2/subversion/bindings/swig/perl/native/blib/lib/SVN/Core.pm line 58.
+# committed 1,2022-04-02T12:15:13.825181Z,root
++ make svnserveautocheck PARALLEL=8
+
+real	23m33.065s
+user	11m38.602s
+sys	6m30.181s
+./subversion/tests/cmdline/svnserveautocheck.sh: line 80: read: read error: 0: Bad file descriptor
+./subversion/tests/cmdline/svnserveautocheck.sh: line 80: read: read error: 0: Bad file descriptor
++ make davautocheck APACHE_MPM=event PARALLEL=8
+Adding password for user jrandom
+Adding password for user jconstant
+Adding password for user __dumpster__
+Adding password for user JRANDOM
+Adding password for user JCONSTANT
+Syntax OK
+
+real	28m2.733s
+user	12m40.138s
+sys	9m44.607s
+./subversion/tests/cmdline/davautocheck.sh: line 117: read: read error: 0: Bad file descriptor
+./subversion/tests/cmdline/davautocheck.sh: line 117: read: read error: 0: Bad file descriptor
+./subversion/tests/cmdline/davautocheck.sh: line 117: read: read error: 0: Bad file descriptor
++ /opt/build-svn-1.14/bin/svn --version --verbose
++ /opt/build-svn-1.14/bin/svn co https://svn.apache.org/repos/asf/subversion/trunk --depth=immediates /tmp/trunk-1.14
+
+real	81m6.963s
+user	53m49.485s
+sys	23m57.677s

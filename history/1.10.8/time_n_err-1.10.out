@@ -1,0 +1,352 @@
++ ./get-deps.sh
++ ./configure --enable-javahl --with-junit=/usr/share/java/junit4.jar --with-jdk=/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64 --with-ctypesgen=/usr/local/bin/ctypesgen --enable-mod-activation --prefix=/opt/build-svn-1.10 --with-serf=/usr --enable-shared
++ make -j8
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
++ make -j8 javahl
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+1 warning
+1 warning
+1 warning
+1 warning
+1 warning
+1 warning
+1 warning
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 warning
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 warning
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 warning
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 warning
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 warning
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 warning
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 warning
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 warning
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+ar: `u' modifier ignored since `D' is the default (see `U')
++ make -j8 swig-py
+ar: `u' modifier ignored since `D' is the default (see `U')
++ make -j8 swig-pl
+ar: `u' modifier ignored since `D' is the default (see `U')
++ make -j8 swig-rb
+In file included from subversion/bindings/swig/ruby/core.c:2029:
+/home/markphip/subversion-1.10.8/subversion/svn_private_config.h:270: warning: "_" redefined
+ #define _(x) dgettext(PACKAGE_NAME, x)
+ 
+In file included from /usr/include/ruby-2.5.0/ruby/ruby.h:29,
+                 from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from subversion/bindings/swig/ruby/core.c:855:
+/usr/include/ruby-2.5.0/ruby/defines.h:169: note: this is the location of the previous definition
+ # define _(args) args
+ 
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘svn_swig_rb_initialize’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:566:3: warning: ‘svn_utf_initialize’ is deprecated [-Wdeprecated-declarations]
+   svn_utf_initialize(swig_rb_pool);
+   ^~~~~~~~~~~~~~~~~~
+In file included from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:68:
+/home/markphip/subversion-1.10.8/subversion/include/svn_utf.h:77:1: note: declared here
+ svn_utf_initialize(apr_pool_t *pool);
+ ^~~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘c2r_info_dup’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1195:1: warning: ‘svn_info_dup’ is deprecated [-Wdeprecated-declarations]
+ DEFINE_DUP(info)
+ ^~~~~~~~~~
+In file included from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.h:51,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:29:
+/home/markphip/subversion-1.10.8/subversion/include/svn_client.h:7192:1: note: declared here
+ svn_info_dup(const svn_info_t *info,
+ ^~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘c2r_wc_entry_dup’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1199:1: warning: ‘svn_wc_entry_dup’ is deprecated [-Wdeprecated-declarations]
+ DEFINE_DUP(wc_entry)
+ ^~~~~~~~~~
+In file included from /home/markphip/subversion-1.10.8/subversion/include/svn_client.h:44,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.h:51,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:29:
+/home/markphip/subversion-1.10.8/subversion/include/svn_wc.h:3227:1: note: declared here
+ svn_wc_entry_dup(const svn_wc_entry_t *entry,
+ ^~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘c2r_client_proplist_item_dup’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1204:1: warning: ‘svn_client_proplist_item_dup’ is deprecated [-Wdeprecated-declarations]
+ DEFINE_DUP_NO_CONVENIENCE(client_proplist_item)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.h:51,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:29:
+/home/markphip/subversion-1.10.8/subversion/include/svn_client.h:409:1: note: declared here
+ svn_client_proplist_item_dup(const svn_client_proplist_item_t *item,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘c2r_log_changed_path_dup’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1206:1: warning: ‘svn_log_changed_path_dup’ is deprecated [-Wdeprecated-declarations]
+ DEFINE_DUP_NO_CONVENIENCE(log_changed_path)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.h:48,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:29:
+/home/markphip/subversion-1.10.8/subversion/include/svn_types.h:909:1: note: declared here
+ svn_log_changed_path_dup(const svn_log_changed_path_t *changed_path,
+ ^~~~~~~~~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘c2r_wc_status2_dup’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1207:1: warning: ‘svn_wc_dup_status2’ is deprecated [-Wdeprecated-declarations]
+ DEFINE_DUP_NO_CONST_WITH_FUNCTION_NAME(wc_status2, wc_dup_status2)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/markphip/subversion-1.10.8/subversion/include/svn_client.h:44,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.h:51,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:29:
+/home/markphip/subversion-1.10.8/subversion/include/svn_wc.h:4056:1: note: declared here
+ svn_wc_dup_status2(const svn_wc_status2_t *orig_stat,
+ ^~~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘svn_swig_rb_hash_to_apr_hash_swig_type’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1240:23: warning: passing argument 2 of ‘r2c_hash’ from incompatible pointer type [-Wincompatible-pointer-types]
+ #define r2c_swig_type svn_swig_rb_to_swig_type
+                       ^~~~~~~~~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1573:25: note: in expansion of macro ‘r2c_swig_type’
+   return r2c_hash(hash, r2c_swig_type, (void *)typename, pool);
+                         ^~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1537:31: note: expected ‘r2c_func’ {aka ‘void * (*)(long unsigned int,  void *, struct apr_pool_t *)’} but argument is of type ‘void * (*)(VALUE,  const void *, apr_pool_t *)’ {aka ‘void * (*)(long unsigned int,  const void *, struct apr_pool_t *)’}
+ r2c_hash(VALUE hash, r2c_func func, void *ctx, apr_pool_t *pool)
+                      ~~~~~~~~~^~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘invoke_callback’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1654:20: warning: passing argument 1 of ‘rb_ensure’ from incompatible pointer type [-Wincompatible-pointer-types]
+   return rb_ensure(callback, baton, callback_ensure, subpool);
+                    ^~~~~~~~
+In file included from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from /home/markphip/subversion-1.10.8/subversion/bindings/swig/proxy/swig_ruby_external_runtime.swg:722,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:28:
+/usr/include/ruby-2.5.0/ruby/ruby.h:1883:17: note: expected ‘VALUE (*)()’ {aka ‘long unsigned int (*)()’} but argument is of type ‘VALUE (*)(VALUE,  ...)’ {aka ‘long unsigned int (*)(long unsigned int,  ...)’}
+ VALUE rb_ensure(VALUE(*)(ANYARGS),VALUE,VALUE(*)(ANYARGS),VALUE);
+                 ^~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1654:37: warning: passing argument 3 of ‘rb_ensure’ from incompatible pointer type [-Wincompatible-pointer-types]
+   return rb_ensure(callback, baton, callback_ensure, subpool);
+                                     ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from /home/markphip/subversion-1.10.8/subversion/bindings/swig/proxy/swig_ruby_external_runtime.swg:722,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:28:
+/usr/include/ruby-2.5.0/ruby/ruby.h:1883:41: note: expected ‘VALUE (*)()’ {aka ‘long unsigned int (*)()’} but argument is of type ‘VALUE (*)(VALUE,  ...)’ {aka ‘long unsigned int (*)(long unsigned int,  ...)’}
+ VALUE rb_ensure(VALUE(*)(ANYARGS),VALUE,VALUE(*)(ANYARGS),VALUE);
+                                         ^~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘callback_handle_error’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1663:21: warning: passing argument 1 of ‘rb_rescue2’ from incompatible pointer type [-Wincompatible-pointer-types]
+   return rb_rescue2(callback,
+                     ^~~~~~~~
+In file included from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from /home/markphip/subversion-1.10.8/subversion/bindings/swig/proxy/swig_ruby_external_runtime.swg:722,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:28:
+/usr/include/ruby-2.5.0/ruby/ruby.h:1882:18: note: expected ‘VALUE (*)()’ {aka ‘long unsigned int (*)()’} but argument is of type ‘VALUE (*)(VALUE,  ...)’ {aka ‘long unsigned int (*)(long unsigned int,  ...)’}
+ VALUE rb_rescue2(VALUE(*)(ANYARGS),VALUE,VALUE(*)(ANYARGS),VALUE,...);
+                  ^~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1665:21: warning: passing argument 3 of ‘rb_rescue2’ from incompatible pointer type [-Wincompatible-pointer-types]
+                     callback_rescue,
+                     ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from /home/markphip/subversion-1.10.8/subversion/bindings/swig/proxy/swig_ruby_external_runtime.swg:722,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:28:
+/usr/include/ruby-2.5.0/ruby/ruby.h:1882:42: note: expected ‘VALUE (*)()’ {aka ‘long unsigned int (*)()’} but argument is of type ‘VALUE (*)(VALUE,  ...)’ {aka ‘long unsigned int (*)(long unsigned int,  ...)’}
+ VALUE rb_rescue2(VALUE(*)(ANYARGS),VALUE,VALUE(*)(ANYARGS),VALUE,...);
+                                          ^~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c: In function ‘invoke_callback_handle_error’:
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1684:20: warning: passing argument 1 of ‘rb_ensure’ from incompatible pointer type [-Wincompatible-pointer-types]
+   return rb_ensure(callback_handle_error, (VALUE)&handle_error_baton,
+                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from /home/markphip/subversion-1.10.8/subversion/bindings/swig/proxy/swig_ruby_external_runtime.swg:722,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:28:
+/usr/include/ruby-2.5.0/ruby/ruby.h:1883:17: note: expected ‘VALUE (*)()’ {aka ‘long unsigned int (*)()’} but argument is of type ‘VALUE (*)(VALUE,  ...)’ {aka ‘long unsigned int (*)(long unsigned int,  ...)’}
+ VALUE rb_ensure(VALUE(*)(ANYARGS),VALUE,VALUE(*)(ANYARGS),VALUE);
+                 ^~~~~~~~~~~~~~~~~
+subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:1685:20: warning: passing argument 3 of ‘rb_ensure’ from incompatible pointer type [-Wincompatible-pointer-types]
+                    callback_ensure, pool);
+                    ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from /home/markphip/subversion-1.10.8/subversion/bindings/swig/proxy/swig_ruby_external_runtime.swg:722,
+                 from subversion/bindings/swig/ruby/libsvn_swig_ruby/swigutil_rb.c:28:
+/usr/include/ruby-2.5.0/ruby/ruby.h:1883:41: note: expected ‘VALUE (*)()’ {aka ‘long unsigned int (*)()’} but argument is of type ‘VALUE (*)(VALUE,  ...)’ {aka ‘long unsigned int (*)(long unsigned int,  ...)’}
+ VALUE rb_ensure(VALUE(*)(ANYARGS),VALUE,VALUE(*)(ANYARGS),VALUE);
+                                         ^~~~~~~~~~~~~~~~~
+ar: `u' modifier ignored since `D' is the default (see `U')
++ sudo make install
+libtool: warning: relinking 'libsvn_delta-1.la'
+libtool: warning: relinking 'libsvn_fs_util-1.la'
+libtool: warning: relinking 'libsvn_fs_fs-1.la'
+libtool: warning: relinking 'libsvn_fs_x-1.la'
+libtool: warning: relinking 'libsvn_fs-1.la'
+libtool: warning: relinking 'libsvn_ra_svn-1.la'
+libtool: warning: relinking 'libsvn_repos-1.la'
+libtool: warning: relinking 'libsvn_ra_local-1.la'
+libtool: warning: relinking 'libsvn_ra_serf-1.la'
+libtool: warning: relinking 'libsvn_diff-1.la'
+libtool: warning: relinking 'libsvn_ra-1.la'
+libtool: warning: relinking 'libsvn_wc-1.la'
+libtool: warning: relinking 'libsvn_client-1.la'
+/usr/share/apache2/build/instdso.sh SH_LIBTOOL='/usr/share/apr-1.0/build/libtool' mod_dav_svn.la /opt/build-svn-1.10/libexec
+libtool: warning: relinking 'mod_dav_svn.la'
+chmod 644 /opt/build-svn-1.10/libexec/mod_dav_svn.so
+[preparing module `dav_svn' in /etc/apache2/mods-available/dav_svn.load]
+/usr/share/apache2/build/instdso.sh SH_LIBTOOL='/usr/share/apr-1.0/build/libtool' mod_authz_svn.la /opt/build-svn-1.10/libexec
+libtool: warning: relinking 'mod_authz_svn.la'
+chmod 644 /opt/build-svn-1.10/libexec/mod_authz_svn.so
+[preparing module `authz_svn' in /etc/apache2/mods-available/authz_svn.load]
++ make check PARALLEL=8
++ make check-javahl
+ar: `u' modifier ignored since `D' is the default (see `U')
++ make check-swig-py
+...............................................................................................................................
+----------------------------------------------------------------------
+Ran 127 tests in 123.612s
+
+OK
++ make check-swig-rb
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+svnserve: E000098: Can't bind server socket: Address already in use
+make: *** [Makefile:948: check-swig-rb] Error 1
++ make check-swig-pl
+# committed 1,2022-04-02T12:15:50.429423Z,root
+# committed 2,2022-04-02T12:15:50.500355Z,root
+# committed 3,2022-04-02T12:15:50.600518Z,root
+# cleanup
+# cleanup
+# cleanup
+# cleanup
+Warning: unable to close filehandle $aresult properly: Bad file descriptor at /home/markphip/subversion-1.10.8/subversion/bindings/swig/perl/native/blib/lib/SVN/Core.pm line 58.
+Warning: unable to close filehandle $aresult properly: Bad file descriptor at /home/markphip/subversion-1.10.8/subversion/bindings/swig/perl/native/blib/lib/SVN/Core.pm line 58.
+Warning: unable to close filehandle $out_fh properly: Bad file descriptor at /home/markphip/subversion-1.10.8/subversion/bindings/swig/perl/native/blib/lib/SVN/Core.pm line 58.
+Warning: unable to close filehandle $out_fh properly: Bad file descriptor at /home/markphip/subversion-1.10.8/subversion/bindings/swig/perl/native/blib/lib/SVN/Core.pm line 58.
+Warning: unable to close filehandle $out_fh properly: Bad file descriptor at /home/markphip/subversion-1.10.8/subversion/bindings/swig/perl/native/blib/lib/SVN/Core.pm line 58.
+Warning: unable to close filehandle $out_fh properly: Bad file descriptor at /home/markphip/subversion-1.10.8/subversion/bindings/swig/perl/native/blib/lib/SVN/Core.pm line 58.
+# committed 1,2022-04-02T12:15:53.624233Z,root
++ make svnserveautocheck PARALLEL=8
+
+real	23m19.436s
+user	11m21.413s
+sys	6m27.345s
++ make davautocheck APACHE_MPM=event PARALLEL=8
+Adding password for user jrandom
+Adding password for user jconstant
+Adding password for user __dumpster__
+Adding password for user JRANDOM
+Adding password for user JCONSTANT
+Syntax OK
+
+real	26m10.223s
+user	12m21.070s
+sys	9m36.235s
+./subversion/tests/cmdline/davautocheck.sh: line 117: read: read error: 0: Bad file descriptor
+./subversion/tests/cmdline/davautocheck.sh: line 117: read: read error: 0: Bad file descriptor
+./subversion/tests/cmdline/davautocheck.sh: line 117: read: read error: 0: Bad file descriptor
++ /opt/build-svn-1.10/bin/svn --version --verbose
++ /opt/build-svn-1.10/bin/svn co https://svn.apache.org/repos/asf/subversion/trunk --depth=immediates /tmp/trunk-1.10
+
+real	77m26.986s
+user	52m14.760s
+sys	23m46.004s
